@@ -4,12 +4,18 @@
 ![Screenshot_2021-05-28 React App](https://user-images.githubusercontent.com/46837843/119931416-ed868780-bfb3-11eb-8ba9-ec18508c2e4c.png)
 
 
-### v0.0 Features
-> 1. Guides and information for hundreds of crops available through OpenFarms API
+### __v0.0 Features__
+> 1. Guides and information for hundreds of crops available through OpenFarms API.
+    Gives information on crop species description, sun requirements, sowing method, plant spread, height, and row spacing. 
 >2. Draggable and resizable crop/plant objects for creating a garden layout plan
->3. Images and Icons for crops available through OpenFrams API
+>3. Images and Icons for various crops available through OpenFarms API
 
-### Upcoming Features for Development
+### __Packages__
+The following packages were used to create Farmestry V0.0
+>1. axios
+>2. react-rnd
+
+### __Upcoming Features for Development__
 > 1. Local and database state save for user's garden (Crop objects, Crop Positions, Crop Status, etc.)
 > 2. Status tracking for each crop/plant object the user owns, such as watering and fertilization schedule, weather monitoring for crops, compatability with other crops, harvest, etc.
 >  3. Notification feature for scheduled crop events
