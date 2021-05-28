@@ -1,5 +1,5 @@
 # Farmestry version 0.0
-## A garden layout planner and crop guide for DIY food growers, powered by OpenFarms API. 
+## A garden layout planner and crop guide for DIY food growers, powered by OpenFarms API (https://openfarm.cc/)
 
 ![Screenshot_2021-05-28 React App](https://user-images.githubusercontent.com/46837843/119931416-ed868780-bfb3-11eb-8ba9-ec18508c2e4c.png)
 
