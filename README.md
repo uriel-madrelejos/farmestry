@@ -1,3 +1,18 @@
+# Farmestry version 0.0
+## A garden layout planner and crop guide for DIY food growers, powered by OpenFarms API. 
+
+### v0.0 Features
+> 1. Guides and information for hundreds of crops available through OpenFarms API
+>2. Draggable and resizable crop/plant objects for creating a garden layout plan
+>3. Images and Icons for crops available through OpenFrams API
+
+### Upcoming Features for Development
+> 1. Local and database state save for user's garden (Crop objects, Crop Positions, Crop Status, etc.)
+> 2. Status tracking for each crop/plant object the user owns, such as watering and fertilization schedule, weather monitoring for crops, compatability with other crops, harvest, etc.
+>  3. Notification feature for scheduled crop events
+
+<br/>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

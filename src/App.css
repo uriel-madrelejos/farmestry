@@ -1,38 +1,131 @@
-.App {
+.app-ui {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+
+}
+
+.header-container {
+  background-color: #564a4a;
+    border: #954535;
+    vertical-align: middle;
+    height: 10px;
+    flex:1 0 5%;
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    margin: 0;
+  }
+  
+  
+  .app-header{
+    margin-top: -30px;
+  }
+  
+
+.garden {
+  grid-row-start: 2;
+  flex: 1 0 95%;
+  padding: 15px;
+  background-image: url('https://images.squarespace-cdn.com/content/v1/551a19f8e4b0e8322a93850a/1566852559261-T73HBDFMAXQT6YCZ2XYF/ke17ZwdGBToddI8pDm48kCK3ShiwawGuxABpoKgwloNZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwh_dMjekDz6LTnUxUQCaAGw31Rdx3PRAMZZRXtwzShsDzRNyEwWtnG1Lw7-qrH-cQ/Grass_Sample.png');
+
+}
+
+p {
+  text-align: justify;
+}
+.plant-icon {
+  height:60px;
+  width: 60px;
+  border-radius: 10px;
+  pointer-events: none;
+  position: 'absolute'; left: '50%'; top: '50%';
+}
+
+.plant-image {
+  height:200px;
+  width: 350px;
+  border-radius: 10px;
+
+}
+
+
+.inputForm {
+  
+  position:absolute;
+  top: 123px;
+  padding-top: 10px;
+
+
+}
+
+h5 {
+  margin-bottom: -15px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.dashboard {
+  background-color: #314e52;
+  opacity: 80%;
+  display: block;
+  overflow: scroll;
+  row-gap: 2px;
+  word-spacing: 1px;
+  padding: 20px;
   color: white;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.inputDiv {
+  position:relative;
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.plant-pot {
+  background-color:#cd5d7d80;
+  position: 'absolute'; left: '50%'; top: '50%';
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-radius: 10px;
+
 }
+
+.plant-form {
+  position:absolute;
+  top: 123px;
+  color: white;
+  background-color: #314e52;
+  padding-top: 20px;
+  opacity: 90%;
+  border-radius: 10px;
+}
+
+
+
+.plant-menu {
+  align-items: center;
+  background-color:#954535;
+  border-radius: 10px;
+  width: 250px;
+  height: 250px;
+  padding: 30px;
+}
+
+.form {
+  align-items: center;
+}
+
+
