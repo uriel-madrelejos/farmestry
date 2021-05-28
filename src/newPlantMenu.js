@@ -4,9 +4,7 @@ import Carousel from 'react-elastic-carousel'
 
 
 const NewPlantMenu = props => {
-//   const [species, setSpecies] = useState("");
-//   const [name, setName] = useState("");
-//   const [dateAcquired, setDateAcquired] = useState("");
+
   const [plantInfo, setPlantInfo] = useState({species:'', nickName: '', dateCreated: '', image:''});
   const [selectedIcon, setSelectedIcon] = useState([])
 
@@ -17,27 +15,7 @@ const NewPlantMenu = props => {
     console.log(props.plonk['image'])
   }
 
-  const Button = props => {
-    const [isSelected, setColor] = useState(false);
 
-    function changeColor(){
-      if(selectedIcon.length==0){
-        setColor(!isSelected);
-      }
-    }
-
-    let btn_class= isSelected? "blackButton" : "whiteButton";
-
-    return (
-      <div>
-          <button className={btn_class}
-                  onClick={ () => {handleClick(props.source); 
-                                    changeColor();} }>
-                    <img className='plant-icon' src={`./assets/${props.source}`} className="plant-icon" alt="Plant" /> 
-           </button>
-      </div>
- )
-  }
 
 
   const handleSubmit = (e) => {
@@ -50,13 +28,6 @@ const NewPlantMenu = props => {
       props.createNew();
   }  
 
-  const PlantIcon = props => {
-    return(
-      <Button source={props.source} onClick={() => handleClick(props.source)} />
-        
-    )
-
-  }
 
   return (
     <Rnd

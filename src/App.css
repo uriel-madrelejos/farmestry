@@ -19,22 +19,21 @@
   }
   
   
-  .app-header{
+.app-header{
     margin-top: -30px;
   }
   
+
 
 .garden {
   grid-row-start: 2;
   flex: 1 0 95%;
   padding: 15px;
   background-image: url('https://images.squarespace-cdn.com/content/v1/551a19f8e4b0e8322a93850a/1566852559261-T73HBDFMAXQT6YCZ2XYF/ke17ZwdGBToddI8pDm48kCK3ShiwawGuxABpoKgwloNZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwh_dMjekDz6LTnUxUQCaAGw31Rdx3PRAMZZRXtwzShsDzRNyEwWtnG1Lw7-qrH-cQ/Grass_Sample.png');
-
 }
 
-p {
-  text-align: justify;
-}
+
+/* SVG icon displayed in plant pot element */
 .plant-icon {
   height:60px;
   width: 60px;
@@ -43,6 +42,7 @@ p {
   position: 'absolute'; left: '50%'; top: '50%';
 }
 
+/* Plant image displayed in Plant Info Dashboard */
 .plant-image {
   height:200px;
   width: 350px;
@@ -51,29 +51,15 @@ p {
 }
 
 
+/* Add plant dialog box forms */
 .inputForm {
   
   position:absolute;
   top: 123px;
   padding-top: 10px;
-
-
 }
 
-h5 {
-  margin-bottom: -15px;
-}
-
-input {
-  margin-bottom: 10px;
-}
-
-label {
-  font-size: 12px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
+/* Plant info dashboard */
 .dashboard {
   background-color: #314e52;
   opacity: 80%;
@@ -89,8 +75,6 @@ label {
 
 .inputDiv {
   position:relative;
-
-
 }
 
 
@@ -126,6 +110,28 @@ label {
 
 .form {
   align-items: center;
+}
+
+
+/* Text elements in PLant Info Dashboard */
+p {
+  text-align: justify;
+}
+
+h5 {
+  margin-bottom: -15px;
+}
+
+
+/* Labels and Input Forms in add Plant Dialog Box */
+input {
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 

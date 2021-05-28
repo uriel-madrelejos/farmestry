@@ -15,7 +15,7 @@ const App = () => (
 )
 
 
-
+//App Title Bar
 const Header = props => {
   return (
     <div className='header-container'>
@@ -26,6 +26,8 @@ const Header = props => {
   )
 }
 
+
+//Draggable and Resizable Crop/Plant Components
 const Plant = props => {
 
   const [responseData, setResponseData] = useState([]); 
@@ -73,36 +75,44 @@ const Plant = props => {
       y: 0,
       width: 90,
       height: 90,
-      
-    }} className='plant-pot' resizeGrid={[15,15]} dragGrid={[15, 15]} minHeight='90px' minWidth='90px'  onDragStop={displayPlantInfo}
-    >
+    }}className='plant-pot' 
+      resizeGrid={[15,15]} 
+      dragGrid={[15, 15]} 
+      minHeight='90px' 
+      minWidth='90px'  
+      onDragStop={displayPlantInfo}>
 
       <img src={`data:image/svg+xml;utf8,${encodeURIComponent(image)}` } className="plant-icon" onError={(e)=>{e.target.onerror = null; e.target.src="./assets/leaf.png"}} onClick={displayPlantInfo}/>
 
 
     </Rnd>
-  );}else{
+    );
+  } else {
     return(
+      //Render this while GET request hasn't returned respones
       <Rnd
-    default={{
-      x: 90,
-      y: 90,
-      width: 90,
-      height: 90,
-      
-    }} className='plant-pot' resizeGrid={[15,15]} dragGrid={[15, 15]} minHeight='90px' minWidth='90px'  
-    >
+        default={{
+          x: 90,
+          y: 90,
+          width: 90,
+          height: 90,
+          
+        }}className='plant-pot' 
+          resizeGrid={[15,15]} 
+          dragGrid={[15, 15]} 
+          minHeight='90px' 
+          minWidth='90px'>
 
-      <img src={`./assets/loading.png` } className="plant-icon" alt="Plant" onClick={displayPlantInfo} />
+          <img src={`./assets/loading.png` } className="plant-icon" alt="Plant" onClick={displayPlantInfo} />
 
 
-    </Rnd>
+      </Rnd>
     )
   }
 }
 
 
-
+//Crop Information Dashboard RnD
 const Dashboard = props => {
   return (
     <Rnd   default={{
@@ -148,7 +158,7 @@ const Dashboard = props => {
 
 
 
-
+//Parent of Crop Elements and Dashboards
 const Garden = props => {
   const [plants, setPlant] = useState([]);
   const [infoDisplay, setInfoDisplay] = useState([])
@@ -157,8 +167,6 @@ const Garden = props => {
   const addPlant = () => {
     setPlant(plants => [...plants, <Plant plantInfo={ plonk } infoDisplay={infoDisplay} setInfoDisplay={setInfoDisplay}/>]);
     console.log(plants)
-
-    
   }
 
   const removePlant = (id) => {
@@ -170,11 +178,10 @@ const Garden = props => {
     //Todo
   }
 
-
   return(
     
   <div className='garden'>
-    <addPlantDialogBox addPlant={addPlant} plonk={plonk} infoDisplay={infoDisplay} setInfoDisplay={setInfoDisplay}/>
+    <AddPlantDialogBox addPlant={addPlant} plonk={plonk} infoDisplay={infoDisplay} setInfoDisplay={setInfoDisplay}/>
 
     <Dashboard infoDisplay={infoDisplay} setInfoDisplay={setInfoDisplay} plonk={plonk}/>
       {plants.map((item, i) => (
@@ -186,8 +193,8 @@ const Garden = props => {
 }
 
 
-
-const addPlantDialogBox = props => {
+//For creating new Crop Elements in user's garden
+const AddPlantDialogBox = props => {
   const [showResults, setShowResults] = React.useState(false)
 
   const onClick = () => setShowResults(!showResults)
